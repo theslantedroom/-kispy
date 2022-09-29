@@ -7,7 +7,7 @@ html, body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 #kispy{
 position: relative;
@@ -53,6 +53,7 @@ position: relative;
   text-decoration: none;
   text-shadow: 0px 1px 0px #86ae47;
   margin: 2px;
+  min-width: 90px;
 }
 
 .btn:hover {
