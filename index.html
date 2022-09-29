@@ -22,6 +22,10 @@
     <source src="audio/imKispySfx.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+  <audio id="trustSfx">
+    <source src="audio/trustSfx.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
 
   <div id="offline-resources">
@@ -34,10 +38,13 @@
 </body>
 <div id="kispy"></div>
 <di class="btnTray">
-  <button  class="btn" onclick="fun()">Meow</button>
-  <button  class="btn" onclick="headSpin()">Spin</button>
+  <button  class="btn" onclick="meow()">Meow</button>
+  <button  class="btn" onclick="headRoll(1500)">Spin</button>
   <button  class="btn" onclick="talk()">Talk</button>
-  <button  class="btn" onclick="fun()">Both</button>
+  <button  class="btn" onclick="trustMe()">Trust</button>
+  <button  class="btn" onclick="speak()">Speak</button>
+  <button class="btn" onclick="jump()">Jump</button>
+
 </div>
 
 

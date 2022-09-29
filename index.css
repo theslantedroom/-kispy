@@ -9,6 +9,10 @@ html, body {
   flex-direction: column;
   align-items: flex-start;
 }
+#kispy{
+position: relative;
+/* bottom: 100px; */
+}
 
 
 .hidden {
@@ -30,6 +34,7 @@ html, body {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -58,4 +63,32 @@ html, body {
 .btn:active {
   position: relative;
   top: 1px;
+}
+
+
+@keyframes jump {
+  0% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+
+  40% {
+    transform: translate3d(0, -10%, 0) scale3d(1, 1.01 1);
+  }
+
+  60% {
+    transform: translate3d(0, -40%, 0) scale3d(1.02, 1.04, 1);
+  }
+
+  80% {
+    transform: translate3d(0, -10%, 0) scale3d(1, 1.01 1);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+  }
+}
+
+.jump {
+  transform-origin: 20% 20%;
+  animation: jump .3s linear;
 }
